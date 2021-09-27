@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../Imagenes/marmol.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    position: fixed;
+    font-size: 35px;
+    font-family: serif;
+}
+
+
+.img-logo {
+    float: left;
+     height: 80px;
+    margin-left: 5%;
+    padding: 10px;
+}
+
+.menu {
+  width: auto;
+  margin-top: 13px;
+  margin-right: 5%;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.menu ul {
+    list-style: none;
+    display: inline-flex;
+
+}
+
+.menu ul a{
+  display: inline-flex;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  
+}
+
+.menu li {
+    color: white;
+    padding: 10px;
+    list-style: none;
+}
+
+.menu ul li a:hover {
+  background-color: greenyellow;
+}
+
+main{
+    position: relative;
+    top: 80px;
+}
+
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 65vh;
+}
+
+div.gallery-container div.gallery-item {
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: flex 0.5s ease-in-out;
+}
+
+div.gallery-item span{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 8px;
+    background-color: salmon;
+    opacity: 0.8;
+    transition: opacity 0.8s ease;
+    border-radius: 5px;
+}
+
+div.gallery-container div.gallery-item:hover span{
+    opacity: 0;
+}
+
+div.gallery-container div.gallery-item:hover{
+    flex: 3;
+}
+
+div.gallery-container div.gallery-item.g-item-1 {
+    background-image: url(../Imagenes/Galileo.jpeg);
+}
+
+div.gallery-container div.gallery-item.g-item-2 {
+    background-image: url(../Imagenes/frida.jpg);
+}
+
+div.gallery-container div.gallery-item.g-item-3 {
+    background-image: url(../Imagenes/abraham.jpg);
+}
+
+div.gallery-container div.gallery-item.g-item-4 {
+    background-image: url(../Imagenes/einstein.jpg);
+}
+
+div.gallery-container div.gallery-item.g-item-5 {
+    background-image: url(../Imagenes/Jesus.jpg);
+}
+
+div.personajes {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    position: static;
+    font-size: 25px;
+    font-family: serif;
+    margin-top: 25px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+article{
+    align-items: center;
+    columns: 5;
+    justify-content: space-between;
+    column-rule: black solid 2px;
+}
+
+div.perso{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+div.video {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    position: static;
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+video{
+    border: 1px solid black;
+    margin: 0px 350px 0px 350px;
+    align-content: center;
+}
+
+div.quees {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    position: static;
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+div.quees p{
+    color: black;
+    text-align: justify;
+    margin: 20px 200px;
+}
+
+.footer-container {
+    width: 100%;
+    background:darkslategrey;
+    color: white;
+    border: 1px solid black;
+}
+
+.footer-main{
+    width: 98%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-main .footer-columna {
+    text-align: justify;
+}
+
+.footercopyright{
+    background: darkgoldenrod;
+    color:black;
+    text-align: center;
+}
+
+.footer-columna h4{
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+.footer-columna h4 p{
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding: 10px 10px; 
+}
